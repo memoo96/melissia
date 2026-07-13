@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="Keywords" content="Melissia - more description" />
+        <meta name="description" content="Melissia - more description" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Melissia</title>
+        <link rel="icon" type="image/png" href="images/icon.png" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
+        <link rel="stylesheet" href="css/slick.min.css" />
+        <link rel="stylesheet" href="css/slick-theme.min.css" /> 
+        <link rel="stylesheet" type="text/css" href="css/lightslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/nice-select.css" />
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+
+<body>
+<div class="Body_overlay"></div>
+    <!-- Start navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+
+        <div class="col-lg-3">
+            <a href="#" class="navbar-brand">
+                <img src="images/Logo.png" alt="">
+            </a>
+            <i class="fa fa-search Search_Icon formobile" data-toggle="modal" data-target="#SearchModel"
+            aria-hidden="true"></i>
+        </div>
+
+        <div class="col-lg-6">
+            <div id="navbarContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            class="nav-link dropdown-toggle">Collection <i class="fa fa-angle-down"
+                                aria-hidden="true"></i></a>
+
+                        <ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0">
+                            <li><a href="#" class="dropdown-item">Collection 1</a></li>
+                            <li><a href="#" class="dropdown-item">Collection 2</a></li>
+                            <li><a href="#" class="dropdown-item">Collection 3</a></li>
+                            <li><a href="#" class="dropdown-item">Collection 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link ">About Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                    <li class="formobile nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="NotifNav" src="images/cart.png" alt="">
+                            Shopping Cart
+                        </a>
+                    </li>
+                    <li class="formobile nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="NotifNav" src="images/fav.png" alt="">
+                            Favourites
+                        </a>
+                    </li>
+                    <li class="formobile nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="NotifNav" src="images/user.png" alt="">
+                            My Account
+                        </a>
+                    </li>
+                    <li  class="formobile nav-item">
+                        <select>
+                            <option value="KWD">KWD</option>
+                            <option value="EGY">EGY</option>
+                            <option value="UAE">UAE</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent"
+            aria-controls="#navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span id="CloseNavMenu" class="mx-2 close"><img src="images/cancel.svg" alt=""></span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="col-lg-3">
+            <div class="links">
+                <ul>
+                    <li>
+                        <select>
+                            <option value="KWD">KWD</option>
+                            <option value="EGY">EGY</option>
+                            <option value="UAE">UAE</option>
+                        </select>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="tooltip" title="Cart" data-placement="bottom">
+                            <img class="CartNav" src="images/cart.png" alt="">
+                            <div class="Notif_Number">
+                                <h5>5</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="tooltip" title="Favourite" data-placement="bottom">
+                            <img class="FavNav" src="images/fav.png" alt="">
+                            <div class="Notif_Number">
+                                <h5>2</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="tooltip" title="Search" data-placement="bottom">
+                            <img data-toggle="modal" data-target="#SearchModel" class="searchNav"
+                                src="images/search.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="tooltip" title="Account" data-placement="bottom">
+                            <img class="userNav" src="images/user.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- End navbar -->
+
+
+    <section id="ProductDetails">
+        <div class="container">
+            <div class="section_header text-center">
+                <h2 class="section-title">Product Details</h2>
+                <div class="header_line">
+                    <img src="images/HeaderLine.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <ul id="imageGallery">
+                        <li data-thumb="images/prod_details_1.png" data-src="images/prod_details_1.png">
+                            <img src="images/prod_details_1.png" />
+                        </li>
+                        <li data-thumb="images/prod_details_2.png" data-src="images/prod_details_2.png">
+                            <img src="images/prod_details_2.png" />
+                        </li>
+                        <li data-thumb="images/prod_details_1.png" data-src="images/prod_details_1.png">
+                            <img src="images/prod_details_1.png" />
+                        </li>
+                        <li data-thumb="images/prod_details_2.png" data-src="images/prod_details_2.png">
+                            <img src="images/prod_details_2.png" />
+                        </li>
+                        <li data-thumb="images/prod_details_1.png" data-src="images/prod_details_1.png">
+                            <img src="images/prod_details_1.png" />
+                        </li>
+                        <li data-thumb="images/prod_details_2.png" data-src="images/prod_details_2.png">
+                            <img src="images/prod_details_2.png" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-7">
+                    <div class="Product_content">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="title">
+                                    <h4>Product Name</h4>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="AddToFav">
+                                    <img src="images/favDetails.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="price">
+                                    <span>12.000 KWD</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="quantity">
+                                    <button class="minus-btn" type="button"
+                                        name="button">
+                                        <img src="images/minus.svg" alt="" />
+                                    </button>
+                                    <input type="text" name="name" value="1">
+                                    <button class="plus-btn" type="button"
+                                        name="button">
+                                        <img src="images/plus.svg" alt="" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rateYo p-0 m-0"></div>
+                        <div class="Reviews">
+                            <p>Reviews | <span>12</span></p>
+                        </div>
+                        <div class="desc">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            </p>
+                        </div>
+                        <div class="SizeColor">
+                            <div class="size">
+                                <ul>
+                                    <li>
+                                        <span data-toggle="modal" data-target="#SizesModel">Size</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="size1" name="size"/>
+                                        <label for="size1">
+                                              <p>XL</p>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="size2" name="size"/>
+                                        <label for="size2">
+                                              <p>L</p>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="size3" name="size"/>
+                                        <label for="size3">
+                                              <p>M</p>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="size4" name="size"/>
+                                        <label for="size4">
+                                              <p>S</p>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="color">
+                                <ul>
+                                    <li>
+                                        <span>Color</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="color1" name="color"/>
+                                        <label for="color1">
+                                                <span style="background-color: #000;"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="color2" name="color"/>
+                                        <label for="color2">
+                                                <span style="background-color: blueviolet;"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="color3" name="color"/>
+                                        <label for="color3">
+                                                <span style="background-color: crimson;"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="color4" name="color"/>
+                                        <label for="color4">
+                                                <span style="background-color: darkgreen;"></span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="AddToCartBtn">
+                            <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Related_title">
+                <h2>Related Products</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="product_item">
+                        <div class="image">
+                            <img class="prod_img" src="images/product_1.png" alt="">
+                            <div class="cartDiv">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="AddtoCart">
+                                <a href="#">Add To Cart</a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                <h5 class="text-truncate">Product Name Will Be Here...</h5>
+                            </div>
+                            <div class="cat">
+                                <span>collection name</span>
+                            </div>
+                            <div class="price">
+                                <span>150,00 KWD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="product_item">
+                        <div class="image">
+                            <img class="prod_img" src="images/product_2.png" alt="">
+                            <div class="cartDiv">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="AddtoCart">
+                                <a href="#">Add To Cart</a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                <h5 class="text-truncate">Product Name Will Be Here...</h5>
+                            </div>
+                            <div class="cat">
+                                <span>collection name</span>
+                            </div>
+                            <div class="price">
+                                <span>150,00 KWD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="product_item">
+                        <div class="image">
+                            <img class="prod_img" src="images/product_3.png" alt="">
+                            <div class="cartDiv">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="AddtoCart">
+                                <a href="#">Add To Cart</a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                <h5 class="text-truncate">Product Name Will Be Here...</h5>
+                            </div>
+                            <div class="cat">
+                                <span>collection name</span>
+                            </div>
+                            <div class="price">
+                                <span>150,00 KWD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="product_item">
+                        <div class="image">
+                            <img class="prod_img" src="images/product_4.png" alt="">
+                            <div class="cartDiv">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="AddtoCart">
+                                <a href="#">Add To Cart</a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                <h5 class="text-truncate">Product Name Will Be Here...</h5>
+                            </div>
+                            <div class="cat">
+                                <span>collection name</span>
+                            </div>
+                            <div class="price">
+                                <span>150,00 KWD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-sm-6 col-12">
+                    <ul class="list-unstyled footer_list">
+                        <li class="widget-container widget_nav_menu">
+                            <h1 class="title-widget">Melissia</h1>
+                            <img class="footerTitle" src="images/footerTitle.png" alt="">
+                            <ul class="linksList">
+                                <div class="Links">
+                                    <ul>
+                                        <li>  
+                                            <div class="location text-truncate"> hawaly, salmaya, block 13...</div>
+                                        </li>
+                                        <li>  
+                                            <a href="tel:123456789">
+                                                <div class="location text-truncate"> +123 456 789</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </ul>
+                            <hr>
+                            <div class="socialFooter">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-12">
+                    <ul class="list-unstyled footer_list">
+                        <li class="widget-container widget_nav_menu">
+                            <h1 class="title-widget">Services</h1>
+                            <img class="footerTitle" src="images/footerTitle.png" alt="">
+                            <ul class="linksList">
+                                <li><a href="#">Search</a></li>
+                                <li><a href="#">Recently viewed</a></li>
+                                <li><a href="#">New products</a></li>
+                                <li><a href="#">Featured products</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-12">
+                    <ul class="list-unstyled footer_list">
+                        <li class="widget-container widget_nav_menu">
+                            <h1 class="title-widget">My Account</h1>
+                            <img class="footerTitle" src="images/footerTitle.png" alt="">
+                            <ul class="linksList">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">My Orders</a></li>
+                                <li><a href="#">My Addresses</a></li>
+                                <li><a href="#">Shopping Cart</a></li>
+                                <li><a href="#">Favorite list</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-12">
+                    <ul class="list-unstyled">
+                        <li class="widget-container widget_nav_menu">
+                            <h1 class="title-widget">Stay In Touch</h1>
+                            <img class="footerTitle" src="images/footerTitle.png" alt="">
+                            <ul class="SocialList">
+                                <li>
+                                    <div class="newsteller">
+                                        <span>Subscribe to newsletters</span>
+                                        <div class="email-box">
+                                            <input type="text" class="form-control subscribeInp"
+                                                placeholder="Enter your email here...">
+                                            <div class="subscribeButton">
+                                                <button class="btn">Subscribe</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <hr>
+                                <li>
+                                    <span class="DownloadApp">Download Our App</span>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-md-6 col-4">
+                                                    <a href="#"><img class="app-store" src="images/AppStore.png" alt=""></a> 
+                                                </div>
+                                                <div class="col-md-6 col-4">
+                                                    <a href="#"><img class="google-play" src="images/GooglePlay.png" alt=""></a> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+           
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 col-12 p-0">
+                    <div class="language">
+                        <p>Copyright © 2021 Melissia. All rights reserved.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-12 p-0">
+                    <div class="copyright">
+                        <p>Developed by <a href="#"><img src="images/HardTask_logo.svg" alt=""></a></p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+
+    <!-- Start Scroll To Top  -->
+    <div class="scroll_top">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </div>
+    <!-- End Scroll To Top -->
+
+
+    <div class="modal fade" id="SearchModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content SearchModelContent">
+                <form action="">
+                    <div class="search_box_popup">
+                        <input class="search_input" type="search" placeholder="Search..." />
+                        <input class="search_btn" type="submit" value="Search" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal fade" id="SizesModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="Sizes_PopUp">
+                   <div class="title">
+                       <h3>Size Chart</h3>
+                   </div>
+                   <div class="row">
+                        <div class="col-12">
+                            <ul class="Test_Tabs nav nav-pills mb-4" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="pills_1_tab" data-toggle="pill" href="#pills_1" role="tab"
+                                        aria-controls="pills_1" aria-selected="true">
+                                        CM
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills_2_tab" data-toggle="pill" href="#pills_2" role="tab"
+                                        aria-controls="pills_2" aria-selected="false">
+                                        INCH
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills_1" role="tabpanel" aria-labelledby="pills_1_tab">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-responsive-stack table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Size</th>
+                                                    <th>XS</th>
+                                                    <th>S</th>
+                                                    <th>M</th>
+                                                    <th>L</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+            
+                                                <tr>
+                                                    <td><span class="Size_title">Shoulder</span></td>
+                                                    <td>41</td>
+                                                    <td>42</td>
+                                                    <td>43</td>
+                                                    <td>44.5</td>
+                                                </tr>
+            
+                                                <tr>
+                                                    <td><span class="Size_title">Bust</span></td>
+                                                    <td>93</td>
+                                                    <td>97</td>
+                                                    <td>101</td>
+                                                    <td>107</td>
+                                                </tr>
+            
+                                                <tr>
+                                                    <td><span class="Size_title">Length</span></td>
+                                                    <td>55</td>
+                                                    <td>56</td>
+                                                    <td>57</td>
+                                                    <td>58.5</td>
+                                                </tr>
+            
+                                                <tr>
+                                                    <td><span class="Size_title">Sleenve Length</span></td>
+                                                    <td>21</td>
+                                                    <td>21.5</td>
+                                                    <td>22</td>
+                                                    <td>22.6</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><span class="Size_title">Cuff</span></td>
+                                                    <td>29.8</td>
+                                                    <td>31</td>
+                                                    <td>32.2</td>
+                                                    <td>34.2</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><span class="Size_title">Bicep Length</span></td>
+                                                    <td>33.5</td>
+                                                    <td>35</td>
+                                                    <td>36.5</td>
+                                                    <td>39</td>
+                                                </tr>
+            
+            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills_2" role="tabpanel" aria-labelledby="pills_2_tab">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-responsive-stack table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Size</th>
+                                                    <th>XS</th>
+                                                    <th>S</th>
+                                                    <th>M</th>
+                                                    <th>L</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+            
+                                                <tr>
+                                                    <td><span class="Size_title">Shoulder</span></td>
+                                                    <td>18.1</td>
+                                                    <td>16.5</td>
+                                                    <td>16.9</td>
+                                                    <td>17.5</td>
+                                                </tr>
+            
+                                                <tr>
+                                                    <td><span class="Size_title">Bust</span></td>
+                                                    <td>36.6</td>
+                                                    <td>38.2</td>
+                                                    <td>39.8</td>
+                                                    <td>42.1</td>
+                                                </tr>
+            
+                                                <tr>
+                                                    <td><span class="Size_title">Length</span></td>
+                                                    <td>21.7</td>
+                                                    <td>22</td>
+                                                    <td>22.4</td>
+                                                    <td>23</td>
+                                                </tr>
+            
+                                                <tr>
+                                                    <td><span class="Size_title">Sleenve Length</span></td>
+                                                    <td>8.3</td>
+                                                    <td>8.5</td>
+                                                    <td>8.7</td>
+                                                    <td>8.9</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><span class="Size_title">Cuff</span></td>
+                                                    <td>11.7</td>
+                                                    <td>12.2</td>
+                                                    <td>12.7</td>
+                                                    <td>13.5</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><span class="Size_title">Bicep Length</span></td>
+                                                    <td>13.2</td>
+                                                    <td>13.8</td>
+                                                    <td>14.4</td>
+                                                    <td>15.4</td>
+                                                </tr>
+            
+            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                        </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script src="js/jquery.simplePagination.js"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+
+        $('#imageGallery').lightSlider({
+            rtl: $('body').css('direction') == 'rtl',
+            gallery: true,
+            item: 1,
+            auto: true,
+            loop: true,
+            pauseOnHover: true,
+            thumbItem: 4,
+            slideMargin: 0,
+            enableDrag: true,
+            currentPagerPosition: 'left',
+        });
+
+        $(function () {
+
+            $(".rateYo").rateYo({
+                starWidth: "18px",
+                rating: 3,
+                spacing: "1px",
+                ratedFill: "#EFCE4A",
+                fullStar: true
+            });
+
+        });
+
+        $(document).ready(function(){
+            $('.My_Slider').slick({
+                rtl: $('body').css('direction') == 'rtl',
+                arrows:false,
+                speed: 500,
+                slidesToShow: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                infinite: true,
+                adaptiveHeight: true
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

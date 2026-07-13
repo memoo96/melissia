@@ -1,0 +1,4526 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito'; 
+    padding-top: 98px;
+    position: relative;
+}
+
+
+.Body_overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.MainBody {
+    padding-top: 0;
+    background-color: #EFEFEF;
+}
+
+.owl-nav {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    top: 30%;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 0;
+}
+
+.owl-nav>div {
+    background: #000;
+    border: 2px solid #000;
+    color: #FFF;
+    font-size: 25px;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.owl-nav>div:hover {
+    background: #000;
+    border-color: #000;
+}
+
+.owl-nav .owl-prev {
+    position: relative;
+    right: 70px;
+    top: 35px;
+}
+
+.owl-nav .owl-next {
+    position: relative;
+    left: 70px;
+    top: 35px;
+}
+
+#owl-carousel-two .owl-nav .owl-next {
+    top: 10px;
+}
+
+#owl-carousel-two .owl-nav .owl-prev {
+    top: 10px;
+}
+
+a,a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+label {
+    color: #7e7e7e;
+    cursor: pointer;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.btn:hover {
+    color: unset;
+}
+
+
+.form-control {
+    border-radius: 3px;
+    padding: 20px;
+    background-color: #FFF;
+    font-size: 14px;
+    color:#000;
+}
+
+.form-control::placeholder {
+    color: #7e7e7e;
+}
+
+
+.form-control,
+textarea.form-control {
+    box-shadow: none;
+    border: 1px solid #ececec;
+    transition: all 0.5s ease-in-out;
+}
+
+.form-control:focus,
+textarea.form-control:focus {
+    color:#000;
+    border-color: #000;
+    box-shadow: none;
+}
+
+textarea.form-control {
+    resize: none;
+    height: 150px;
+}
+
+.section_header {
+    margin-bottom: 50px;
+}
+
+.section_header .section-title {
+    font-size: 30px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.section_header .header_line {
+    text-align: center;
+}
+
+.section_header .header_line img {
+    width: auto;
+    height: 13px;
+}
+
+
+.modal {
+    z-index:1075;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    border-radius: 3px;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.SearchModelContent {
+    background-color: transparent;
+}
+
+
+.search_box_popup {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.search_box_popup .search_input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #FFF;
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 0px;
+    -webkit-appearance: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.search_box_popup .search_btn {
+    visibility: hidden;
+    opacity: 0;
+    padding: 7px;
+    background-color: #333;
+    color: #FFF;
+    width: 30%;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.search_box_popup .search_btn:hover {
+    background-color: #333;
+}
+
+.Search_Icon {
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    font-size: 20px;
+    color: #000;
+}
+
+.Arabic {
+    font-family:'Cairo', sans-serif; 
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0,0,0,0.6);
+}
+
+
+.nav-pills {
+    padding: 0;
+}
+
+.nav-pills .nav-link {
+    color: #9B9B9B;
+    border-bottom: 3px solid transparent;
+    background-color: transparent;
+    padding: 10px 5px;
+    margin-left: 10px !important;
+    border-radius: 0px;
+    text-align: center;
+    width: 110px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-pills .nav-link:last-of-type {
+    margin-left: 0;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover,
+.nav-pills .show>.nav-link {
+    border-color: #000;
+    background-color: transparent;
+    color: #000;
+}
+
+.Test_Tabs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eeeef0;
+}
+
+.simple-pagination ul {
+	margin: 0 0 20px;
+	padding: 0;
+	list-style: none;
+	text-align: right;
+}
+
+.simple-pagination li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.simple-pagination li a,
+.simple-pagination li span {
+	color: #666;
+    padding: 5px 10px;
+	text-decoration: none;
+    background-color: #FFF;
+    border-radius: 3px;
+    box-shadow: none;
+    border: 1px solid #DDD;
+    outline: none;
+}
+
+.page-link:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.page-link:hover {
+    color: #FFF;
+    background: #000;
+    border-color: #000;
+}
+
+.simple-pagination .current {
+	color: #FFF;
+    background-color:#000;
+    border-color: #000;
+}
+
+.simple-pagination .prev.current,
+.simple-pagination .next.current {
+    background: #FFF;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.tooltip-inner {
+    max-width: 200px;
+    padding: .25rem .5rem;
+    color: #FFF;
+    text-align: center;
+    background-color: #000;
+    border-radius: .25rem;
+}
+
+.tooltip.show {
+    opacity: 1; 
+}
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before {
+    bottom: 0;
+    border-width: 0 .4rem .4rem;
+    border-bottom-color: #000;
+}
+
+.formobile {
+    display: none;
+}
+
+.formobile img {
+    margin-right: 5px;
+    height: 15px;
+}
+
+.navbar {
+    background-color: #FFF;
+    padding: 0.5rem 1rem;
+    top: 0;
+    box-shadow : #0000001a 0px 3px 10px;
+    transition: top 0.5s ease-in-out 0s;
+}
+
+.MainNav {
+    background-color: transparent;
+    box-shadow : none;
+    padding: 20px 1rem;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+#navbarContent::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000 !important;
+    font-size: 14px;
+    padding: 0.7rem 1rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.navbar-light .navbar-nav .nav-link.active::after,
+.navbar-light .navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    margin-top: 3px;
+    border-radius: 3px;
+    background-color:#000;
+    transition: width 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link.active::after,
+.navbar-light .navbar-nav .nav-link:hover::after {
+    width: 40%;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #000 !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #000 !important;
+}
+
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url('../images/menu-button.svg');
+}
+
+.navbar-light .navbar-toggler {
+    position: fixed;
+    right: 2%;
+    top: 20px;
+    z-index: 1;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar-toggler>.close {
+    display: inline-block;
+    color: #000;
+    opacity: 1;
+    text-shadow: none;
+    margin-top: 3px;
+}
+
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display: none;
+}
+
+.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover {
+    opacity: 1;
+}
+
+.navbar-brand {
+    outline: none;
+    text-decoration: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+}
+
+.navbar-brand img {
+    width: auto;
+    height: 80px;
+    transition: height 0.5s ease-in-out;
+}
+
+.MainNav .navbar-brand img {
+    width: auto;
+    height: 100px;
+    transition: height 0.5s ease-in-out;
+}
+
+.navbar .links {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.navbar .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .links ul li {
+    display: inline-block;
+    margin-left: 25px;
+    position: relative;
+}
+
+
+.Notif_Number {
+    position: absolute;
+    top: -28%;
+    left: 60%;
+    color: #FFF;
+    text-align: center;
+    background-color: #000;
+    border-radius: 30px;
+}
+
+.Notif_Number h5{
+    font-size: 10px;
+    width: 14px;
+    padding: 1px 0;
+    margin: auto;
+}
+
+.navbar .links ul li a {
+    outline: none;
+    text-decoration: none;
+}
+
+.navbar .links ul li img {
+    width: auto;
+    height: 20px;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>a:after {
+    content: "\f0da" !important;
+    float: right !important;
+    border: none !important;
+    font-family: 'FontAwesome' !important;
+    position: absolute !important;
+    right: 15px !important;
+    margin-top: 0 !important;
+    margin-left: .255em !important;
+}
+
+.dropdown-menu {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #0000001a;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.dropdown-item {
+    padding: 10px 0px;
+    padding-right: 30px;
+    padding-left: 20px;
+    color: #5d5d5d;
+    font-size: 14px;
+    border-radius: 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.dropdown-item.active, .dropdown-item:active,
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #000;
+    color: #FFF;
+} 
+
+
+.dropdown-toggle::after {
+    content: '' !important;
+    height: 3px !important;
+    margin-top: 3px !important;
+    border: none !important;
+}
+
+
+
+/* Slider */
+.My_Slider .slide {
+    position: relative;
+}
+
+.My_Slider .slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slick-dots {
+    bottom: 0;
+    text-align: center;
+}
+.slick-dots li {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.slick-dots li button:before {
+    font-size: 40px;
+    opacity: 1;
+    color: #7B7B7B;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #000;
+    opacity: 1;
+    border: none;
+    border-radius: 50%;
+} 
+
+.slick-dots li button:before {
+    line-height: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.contentSlider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(10%,-50%);
+    color: #000;
+    width: 40%;
+    text-align: center;
+    z-index: 3;
+}
+
+.contentSlider h5 {
+    display: inline-block;
+    font-size: 35px;
+    color: #000;
+    font-family: 'Script MT'; 
+}
+
+.contentSlider .slider_line {
+    width: auto !important;
+    height: 15px !important;
+    margin: 10px auto;
+}
+
+.contentSlider h1 {
+    margin-bottom: 10px;
+    font-size: 60px;
+    color:#000;
+}
+
+.contentSlider p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+}
+
+.contentSlider p span {
+    color: #7B7B7B;
+    margin-right: 3px;
+}
+
+
+.contentSlider a {
+    background: #000;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    padding: 5px;
+    width: 120px;
+    border-radius: 3px;
+    color: #FFF;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.contentSlider a:hover {
+    background-color: #333;
+}
+
+
+
+
+/* Collections */
+#Collections {
+    margin: 40px 0;
+}
+
+.collection_item {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.collection_item:hover .image img {
+    transform: scale(1.1);
+}
+
+.collection_item:hover .title h5 {
+    color: #000;
+}
+
+.collection_item .image {
+    width: 100%;
+    height: 493px;
+    position: relative;
+    overflow: hidden;
+}
+
+.collection_item .right_image {
+    height: 232px;
+}
+
+.collection_item .image img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.collection_item .title {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.collection_item .title h5 {
+   font-size: 18px;
+   color: #000;
+   text-transform: uppercase;
+   transition: all 0.5s ease-in-out;
+}
+
+.collection_item .title h5 span {
+    display: block;
+}
+
+#Collections .moreButton {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#Collections .moreButton a {
+    background: transparent;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #000;
+    padding: 5px;
+    width: 120px;
+    border-radius: 3px;
+    color: #000;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.2s ease-in-out;
+}
+
+#Collections .moreButton a:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+
+/* Products */
+#Products {
+    margin: 40px 0;
+    padding: 40px 0;
+    background-color: #FFF;
+}
+
+
+.product_item {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.product_item:hover .cartDiv {
+    visibility: visible;
+    opacity: 1;
+    right: 0%;
+}
+
+.product_item:hover .AddtoCart {
+    visibility: visible;
+    opacity: 1;
+    bottom: 0;
+}
+
+.product_item:hover .image .prod_img {
+    transform: scale(1.1);
+}
+
+.product_item .image {
+    border-radius: 3px;
+    width: 100%;
+    height: 358px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product_item .image .prod_img {
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.new_Prod {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.new_Prod span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 10px;
+    background-color: #000;
+    border-radius: 0;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.cartDiv {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    right: -10%;
+    top: 50%;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.cartDiv ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.cartDiv ul li {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cartDiv ul li i {
+    color: #929292;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #FFF;
+    transition: all 0.2s ease-in-out;
+}
+
+.cartDiv ul li i:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+.product_item .title {
+    margin-bottom: 5px;
+}
+
+.product_item .title h5 {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.product_item .cat {
+    margin-bottom: 5px;
+}
+
+.product_item .cat span {
+    color: #B8B8B8;
+    font-size: 14px;
+}
+
+.product_item .price span {
+    color: #000;
+    font-size: 16px;
+}
+
+.product_item .AddtoCart {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.product_item .AddtoCart a {
+    background: #000;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    padding: 7px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 0px;
+    color: #FFF;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.product_item  .AddtoCart a:hover {
+    background-color: #333;
+}
+
+
+#Products .moreButton {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#Products .moreButton a {
+    background: transparent;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #000;
+    padding: 5px;
+    width: 120px;
+    font-size: 14px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #000;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.2s ease-in-out;
+}
+
+#Products .moreButton a:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+
+/* Ads_slider */
+#Ads_slider {
+    padding: 40px 0;
+}
+
+
+
+
+ /* Footer */
+ .footer {
+    padding: 40px 0;
+    background-color: #FFF;
+    border-top: 1px solid #ededed;
+}
+
+.title-widget {
+    color:#000;
+    font-size: 18px;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.widget_nav_menu .footerTitle {
+    width: 70px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.widget_nav_menu .linksList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget_nav_menu .linksList li {
+    font-size: 14px;
+	position: relative;
+    margin-bottom: 10px;
+    width:100%;
+    color:#000;
+}
+
+.widget_nav_menu .linksList li a {
+    color: #6A6A6A;
+    font-weight: lighter;
+    transition: all 0.2s ease-in-out;
+}
+
+.widget_nav_menu .linksList li a:hover {
+    padding-left: 10px;
+    border-left: 3px solid  #000;
+    color: #000;
+}
+
+
+.widget_nav_menu .linksList .Links ul li {
+    color:#000;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+}
+
+.widget_nav_menu .linksList .Links ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+.widget_nav_menu .linksList .Links ul li div {
+    color: #6A6A6A;
+    font-size: 14px;
+}
+
+.widget_nav_menu hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #D2D2D2;
+}
+
+.footer-bottom {
+    width: 100%;
+    background-color: #EFEFEF;
+}
+
+.language {
+    color: #000;
+    padding: 10px 0;
+}
+
+.copyright {
+    color: #000;
+    text-align: right;
+    padding: 10px 0;
+}
+
+.copyright img {
+    height: auto;
+    width: 50px;
+}
+
+.copyright p, .language p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.SocialList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.newsteller span {
+    font-size: 14px;
+    color: #6A6A6A;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.newsteller .email-box  {
+    position: relative;
+    width: 100%;
+}
+
+.newsteller .email-box .subscribeInp {
+    border-radius: 3px;
+    border: 1px solid #CFCFCF;
+    color: #000;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.newsteller .email-box .subscribeInp:focus {
+    box-shadow: none;
+    border-color: #000;
+}
+
+.newsteller .subscribeButton {
+    margin: 15px 0;
+}
+
+.newsteller .subscribeButton button {
+    background-color: #000;
+    color: #FFF;
+    border-radius: 3px;
+    width: 50%;
+    padding: 7px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.newsteller .subscribeButton button:hover {
+    background-color:#333;
+}
+
+.DownloadApp {
+    font-size: 14px;
+    color: #6A6A6A;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.widget_nav_menu .app-store, 
+.widget_nav_menu .google-play {
+    width: auto;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.socialFooter  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.socialFooter ul li{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.socialFooter ul li a {
+    display: flex;
+    color: #8C8C8C;
+    width: 28px;
+    height: 28px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.socialFooter ul li a i {
+    font-size: 16px;
+}
+
+.socialFooter ul li a:hover {
+    background-color:#000;
+    color: #FFF;
+}
+
+
+
+/*Scroll To Top */
+
+.scroll_top {
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    background-color: #000;
+    text-align: center;
+    position: fixed;
+    right: 0px;
+    bottom: 30px;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    border-radius: 3px;
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
+}
+
+.scroll_top i {
+    position: absolute;
+    top: 9px;
+    right: 13px;
+    font-size: 22px;
+    transition: all 0.2s ease-in-out;
+}
+
+.scroll_top:hover {
+    background-color: #333;
+}
+
+
+/* Category_page */
+  #Category_page {
+    padding: 60px 0;
+  }
+  
+  #Category_page .Category_title {
+      border-bottom: 1px solid #0000001a;
+      margin-bottom: 2rem;
+  }
+
+  #Category_page .Category_title h2 {
+      font-size: 28px;
+      color: #000;
+      margin-bottom: 1rem;
+  }
+  
+  #Category_page .SortBy {
+      padding: 20px;
+      width: 100%;
+      text-align: left;
+      background-color: #FFF;
+      margin-bottom: 30px;
+      padding-bottom: 10px;
+      border-radius: 3px;
+      box-shadow: 0px 2px 10px #0000001f;
+  }
+  
+  #Category_page .SortBy span {
+    color: #000;
+    font-size: 18px;
+  }
+  
+  
+  #Category_page .SortBy .radio-label,
+  #Category_page .SortBy .checkbox-label {
+    width: 100%;
+    font-size: 14px;
+    color: #B8B8B8;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+  
+  #Category_page .SortBy input[type="radio"],
+  #Category_page .SortBy input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  #Category_page .SortBy input[type="radio"]+.radio-label:before,
+  #Category_page .SortBy input[type="checkbox"]+.checkbox-label:before {
+    content: '';
+    background: #fff;
+    border-radius: 100%;
+    border: 1.5px solid #c9cdd2;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    margin-right: 8px;
+    vertical-align: sub;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  
+  #Category_page .SortBy input[type="checkbox"]+.checkbox-label:before {
+      border-radius: 10%;
+  }
+  
+  
+  #Category_page .SortBy input[type="radio"]:checked+.radio-label,
+  #Category_page .SortBy input[type="checkbox"]:checked+.checkbox-label {
+    color: #000;
+  }
+  
+  #Category_page .SortBy input[type="radio"]:checked+.radio-label:before,
+  #Category_page .SortBy input[type="checkbox"]:checked+.checkbox-label:before {
+    background-color: #000;
+    border-color: #000;
+    box-shadow: inset 0 0 0 3px #ffffff;
+  }
+  
+  #Category_page .SortBy input[type="radio"]:disabled+.radio-label:before,
+  #Category_page .SortBy input[type="checkbox"]:disabled+.checkbox-label:before {
+    box-shadow: inset 0 0 0 4px #c9cdd2;
+    border-color: #838d98;
+    background: #838d98;
+  }
+
+
+
+
+
+
+
+  /***********************************/
+  /* #Category_page .SortBy ul {
+    margin: 0 0 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #Category_page .SortBy ul li {
+    font-size: 14px;
+    text-align: left;
+    padding: 5px 0;
+}
+
+#Category_page .SortBy ul li a {
+    display: inline-block;
+    color: #7e7e7e;
+    font-size: 14px;
+}
+
+#Category_page .SortBy ul li a:before {
+    content: "\26AA";
+    top: 4px;
+    left: -5px;
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+    background-color: #fff;
+}
+
+#Category_page .SortBy ul .active > a {
+    color: #000;
+}
+
+
+#Category_page .SortBy ul .active > a:before {
+    content: "\25C9";
+    top: 4px;
+    left: -5px;
+    width: 5px;
+    height: 5px;
+    font-size: 22px;
+    color: #000;
+    background-color: #fff;
+} */
+
+
+
+
+
+/*******************************************/
+/* #Category_page .Form > .form-group{
+    position: relative;
+}
+
+#Category_page .Form label{
+    position: absolute;
+    opacity: 1;
+    font-size: 16px;
+    left: 0;
+    pointer-events: none;
+    color:#000;
+    transition: all .22s;
+    top: 0;
+    display: block;
+    margin-bottom: 0;
+}
+  
+#Category_page .Form input{
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    padding-left: 0;
+    margin: 1rem 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+    transition: all 0.2s ease-in-out;
+} */
+
+
+  /************************************/
+  
+  #Category_page .Filter_Btn {
+    display: none;
+  }
+  
+  #Category_page .Filter_Btn a {
+    background: #000;
+    border: none;
+    padding: 7px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+    color: #FFF;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #Category_page .Filter_Btn a i {
+    margin-right: 5px;
+  }
+  
+  #Category_page .Filter_Btn a:hover {
+    background-color: #000;
+  }
+  
+  
+  
+  
+  /* ProductDetails Page */
+  #ProductDetails {
+      padding: 60px 0;
+  }
+  
+  .lSSlideOuter {
+      margin-bottom: 60px;
+  }
+  
+  .lSAction > a {
+      background-image: url(../images/controls.png);
+      opacity: 1;
+    }
+  
+    .lSSlideOuter .lightSlider {
+      /* height: 450px !important; */
+      height: auto;
+    }
+  
+    .lSSlideWrapper {
+      border-radius: 5px;
+    }
+    
+    .lSSlideOuter .lightSlider li img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+    .lSSlideOuter .lSPager.lSGallery img {
+      border-radius: 5px;
+    }
+  
+  
+    #ProductDetails  .Product_content {
+        margin-bottom: 60px;
+    }
+  #ProductDetails  .Product_content .title h4 {
+      margin-bottom: 0;
+      margin-top: 5px;
+      color: #000;
+      font-weight: 600;
+      font-size: 24px;
+  }
+  
+  #ProductDetails  .Product_content .price {
+      margin-bottom: 20px;
+  }
+  
+  #ProductDetails  .Product_content .price span {
+      color: #000;
+      font-weight: 600;
+      font-size: 18px;
+  }
+  
+  
+  #ProductDetails  .Product_content .quantity {
+      text-align: right;
+      margin-bottom: 20px;
+      margin-top: 5px;
+  }
+  
+  #ProductDetails  .Product_content .quantity input {
+      -webkit-appearance: none;
+      border: none;
+      text-align: center;
+      width: 40px;
+      padding: 2px;
+      border: 1px solid #E2E2E2;
+      font-size: 14px;
+      color: #43484D;
+      font-weight: 300;
+      background-color: transparent;
+  }
+     
+  #ProductDetails  .Product_content .quantity button[class*=btn] {
+      width: 25px;
+      height: 25px;
+      background: none;
+      border-radius: 0;
+      border: 1px solid #000;
+      background-color: #000;
+      cursor: pointer;
+  }
+  
+  #ProductDetails  .Product_content .quantity .minus-btn img,
+  #ProductDetails  .Product_content .quantity .plus-btn img {
+      margin-bottom: 3px;
+  }
+  
+  #ProductDetails  .Product_content .quantity button:focus,
+  #ProductDetails  .Product_content .quantity input:focus {
+      outline:0;
+  }
+  
+  #ProductDetails  .Product_content .Reviews {
+      margin: 20px 0;
+  }
+  
+  #ProductDetails  .Product_content .Reviews p {
+      margin-bottom: 0;
+      color: #616161;
+      font-size: 14px;
+  }
+  
+  #ProductDetails  .Product_content .desc {
+      margin: 20px 0;
+  }
+  
+  #ProductDetails  .Product_content .desc p {
+      margin-bottom: 0;
+      color: #7D7679;
+      font-size: 14px;
+  }
+  
+  
+  #ProductDetails  .Product_content .AddToCartBtn {
+      margin-top: 10px;
+  }
+  
+  #ProductDetails  .Product_content .AddToCartBtn a {
+      background: #000;
+      display: inline-block;
+      text-align: center;
+      border: none;
+      padding: 7px;
+      width: 180px;
+      border-radius: 3px;
+      color: #FFF;
+      outline: none;
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+  } 
+  
+  #ProductDetails  .Product_content .AddToCartBtn a i {
+      margin-right: 3px;
+      font-size: 18px;
+  }
+  
+  #ProductDetails  .Product_content .AddToCartBtn a:hover {
+      background-color: #333;
+  }
+  
+  #ProductDetails  .Product_content .AddToFav {
+      text-align: right;
+  }
+  
+  #ProductDetails  .Product_content .AddToFav img {
+      width: 40px !important;
+      height: 40px !important;
+      box-shadow: 1px 3px 10px #00000017;
+      cursor: pointer;
+  }
+  
+  
+  #ProductDetails .SizeColor {
+      margin: 20px 0;
+    }
+    
+    #ProductDetails .SizeColor .size {
+      margin-bottom: 20px;
+    }
+    
+    #ProductDetails .SizeColor ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    #ProductDetails .SizeColor ul li {
+      display: inline-block;
+      margin-right: 20px;
+      position: relative;
+      cursor: pointer;
+    }
+    
+    #ProductDetails .SizeColor ul li:last-of-type {
+      margin-right: 0;
+    }
+    
+    
+    #ProductDetails .SizeColor ul li span {
+      font-size: 14px;
+      color: #000;
+      display: inline-block;
+      font-weight: 600;
+    }
+    
+    #ProductDetails .SizeColor ul li input[type="radio"][id^="size"],
+    #ProductDetails .SizeColor ul li input[type="radio"][id^="color"] {
+    display: none;
+    }
+    
+    #ProductDetails .SizeColor ul li label {
+    border: 1px solid #DDD;
+    padding: 5px;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    color: #757575;
+    margin-bottom: 0;
+    line-height: 0.7;
+    }
+    
+    #ProductDetails .SizeColor ul li label:hover {
+      color: #757575;
+    }
+    
+    
+    #ProductDetails .SizeColor ul li label p {
+      margin-bottom: 0;
+      color: #a5a4a4;
+      font-size: 14px;
+      width: 80%;
+    }
+    
+    #ProductDetails .SizeColor ul li label span {
+      width: 20px;
+      height: 20px;
+      margin: 0;
+    }
+    
+    
+    #ProductDetails .SizeColor ul li label .checked span {
+    font-size: 14px;
+    color: #000;
+    }
+    
+    #ProductDetails .SizeColor ul li input:checked + label {
+    border-color: #000;
+    }
+    
+    #ProductDetails .SizeColor ul li input:checked + label p {
+      color: #000;
+    }
+  
+  #ProductDetails .Related_title {
+      margin-bottom: 30px;
+      text-align: center;
+  }
+  
+  #ProductDetails .Related_title h2 {
+      color: #000;
+  }
+  
+  /* ShoppingCart */
+  #ShoppingCart {
+      padding: 60px 0;
+  }
+  
+  #ShoppingCart .totalPrice {
+      padding: 20px;
+      border-radius: 0;
+      background-color: #F9F9F9;
+      margin-bottom: 20px;
+      border-radius: 10px;
+  }
+  
+  #ShoppingCart .totalPrice .title {
+      margin-bottom: 10px;
+  }
+  
+  #ShoppingCart .totalPrice .title span {
+      color: #000;
+      font-size: 14px;
+  }
+  
+  #ShoppingCart .totalPrice .title span.titleTotal {
+      font-weight: 600;
+  }
+  
+  
+  #ShoppingCart .totalPrice .price {
+      margin-bottom: 10px;
+      text-align: right;
+  }
+  
+  #ShoppingCart .totalPrice .price span {
+      color: #000;
+      font-size: 14px;
+  }
+  
+  #ShoppingCart .totalPrice .price span.priceTotal {
+      font-weight: 600;
+  }
+  
+  #ShoppingCart .checkoutBtn {
+      text-align: right;
+  }
+  
+  #ShoppingCart .checkoutBtn a {
+      background: #000;
+      display: inline-block;
+      text-align: center;
+      border: none;
+      padding: 7px;
+      width: 100%;
+      border-radius: 3px;
+      color: #FFF;
+      outline: none;
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  #ShoppingCart .checkoutBtn a:hover {
+      background-color: #333;
+  }
+  
+  #ShoppingCart .DiscountCode {
+      padding: 20px;
+      border-radius: 0;
+      background-color: #F9F9F9;
+      margin-bottom: 20px;
+  }
+  
+  #ShoppingCart .DiscountCode .title {
+      margin-top: 8px;
+  }
+  
+  #ShoppingCart .DiscountCode .title span {
+      font-size: 16px;
+      color: #ACACAC;
+  }
+  
+  #ShoppingCart .DiscountCode .couponBtn a {
+      background: #000;
+      display: inline-block;
+      text-align: center;
+      border: none;
+      padding: 5px;
+      width: 100%;
+      border-radius: 3px;
+      color: #FFF;
+      outline: none;
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  #ShoppingCart .DiscountCode .couponBtn a:hover {
+      background-color: #333;
+  }
+  
+  #ShoppingCart .buttons {
+      margin-bottom: 20px;
+  }
+  
+  #ShoppingCart .buttons .ContinueBtn {
+      background: transparent;
+      display: inline-block;
+      text-align: center;
+      border: 1px solid #000;
+      padding: 5px;
+      width: 200px;
+      margin-right: 10px;
+      border-radius: 3px;
+      color: #000;
+      outline: none;
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  #ShoppingCart .ContinueBtn:hover {
+      background-color: #333;
+      color: #FFF;
+  }
+  
+  
+  #ShoppingCart .buttons .UpdateBtn {
+      background: transparent;
+      display: inline-block;
+      text-align: center;
+      border: 1px solid #ACACAC;
+      padding: 5px;
+      width: 200px;
+      border-radius: 3px;
+      color: #ACACAC;
+      outline: none;
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  #ShoppingCart .UpdateBtn:hover {
+      background-color: #ACACAC;
+      color: #FFF;
+  }
+  
+  .table-striped tbody tr {
+      border-bottom: 1px solid #DDD;
+  }
+  
+  .table-striped tbody tr:last-of-type {
+      border-bottom: none;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+      background-color: transparent;
+  }
+  
+  .table thead {
+      background-color: #808080;
+  }
+  
+  .table-bordered {
+      border: none;
+      margin-bottom: 0;
+  }
+  
+  .table-bordered thead th,
+  .table-bordered tr:last-of-type td {
+      border: 0;
+  }
+  
+  .table thead th {
+      color: #FFF;
+  }
+  
+  .table td,
+  .table th {
+      vertical-align: middle;
+      text-align: left;
+  }
+  
+  .table-bordered td,
+  .table-bordered th {
+      border: 0;
+      font-size: 15px;
+      border-bottom: 0;
+  }
+  
+  .table-bordered td .productImg {
+      width: 150px;
+      margin: auto;
+      height: 90px;
+      border-radius: 3px;
+  }
+  
+  .table-bordered th {
+      font-weight: 500;
+      color: #000;
+  }
+  
+  
+  .table-bordered .deletecard {
+      color: #808080;
+      background-color: transparent;
+      padding: 5px;
+      padding-left: 6px;
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  .table-bordered .deletecard:hover {
+      background-color: #000;
+      color: #FFF;
+  }
+  
+  /* Checkout */
+  #Checkout {
+      padding: 60px 0;
+  }
+  
+  
+  #Checkout .Content .TotalPrice .price {
+      margin-bottom: 10px;
+      text-align: right;
+  }
+  
+  #Checkout .Content .TotalPrice .price span {
+      text-align: right;
+      color: #000;
+      margin-bottom: 10px;
+      font-size: 16px;
+  }
+  
+  #Checkout .Content .TotalPrice .title {
+      margin-bottom: 10px;
+  }
+  
+  #Checkout .Content .TotalPrice .title span {
+      margin-bottom: 0;
+      color: #000;
+      font-size: 16px;
+  }
+  
+  #Checkout .Content .TotalPrice .title span.titleTotal,
+  #Checkout .Content .TotalPrice .price span.priceTotal {
+      font-weight: 600;
+  }
+  
+  #Checkout .Content .Address h5 {
+      color: #000;
+  }
+  
+  #Checkout .Content .Address span {
+      color: #7A7A7A;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 5px;
+  }
+  
+  #Checkout .Content .Address span i {
+      margin-right: 5px;
+      font-size: 20px;
+  }
+  
+  #Checkout .Content .Address p {
+      margin-bottom: 0;
+      font-size: 14px;
+      color: #7A7A7A;
+  }
+  
+  #Checkout .Content .PaymentMethod {
+      text-align: right;
+  }
+  
+  #Checkout .Content .PaymentMethod .title {
+      text-align: left;
+      margin-top: 10px;
+  }
+  
+  #Checkout .Content .PaymentMethod .title h5 {
+      margin-bottom: 0;
+  }
+  
+  #Checkout .Content .PaymentMethod ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+  }
+    
+  #Checkout .Content .PaymentMethod li {
+      display: inline-block;
+      margin-right: 10px;
+  }
+  
+  #Checkout .Content .PaymentMethod li:last-of-type {
+      margin-right: 0;
+  }
+    
+  #Checkout .Content .PaymentMethod input[type="radio"][id^="method"] {
+      display: none;
+  }
+    
+  #Checkout .Content .PaymentMethod label {
+      border: 2px solid transparent;
+      border-radius: 3px;
+      padding: 3px;
+      display: block;
+      cursor: pointer;
+  }
+    
+  #Checkout .Content .PaymentMethod label img {
+      height: 35px;
+      width: 35px;
+  }
+    
+  #Checkout .Content .PaymentMethod input:checked + label {
+      border-color: #000;
+  }
+  
+  #Checkout .Content .PayButton {
+      text-align: right;
+      margin-top: 30px;
+  }
+  
+  #Checkout .Content .PayButton a {
+      background: #000;
+      display: inline-block;
+      text-align: center;
+      border: none;
+      padding: 7px;
+      width: 200px;
+      border-radius: 3px;
+      color: #FFF;
+      outline: none;
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  #Checkout .Content .PayButton a:hover {
+      background-color: #333;
+  }
+  
+  
+  /* Order_Details */
+  #Order_Details {
+      padding: 60px 0;
+  }
+  
+  
+  #Order_Details .Content .OrderName {
+      margin-bottom: 30px;
+    }
+    
+    #Order_Details .Content .OrderName .title {
+        margin-top: 5px;
+    }
+    #Order_Details .Content .OrderName .title h5 {
+      color: #000;
+      font-weight: 600;
+    }
+    
+    
+    #Order_Details .Content .OrderName .Status {
+      display: inline-block;
+      font-size: 16px;
+    }
+  
+  #Order_Details .Content .InvoiceBtn {
+      text-align: right;
+    }
+    
+    #Order_Details .Content .InvoiceBtn a {
+      background: #000;
+      display: inline-block;
+      text-align: center;
+      border: none;
+      padding: 7px;
+      width: 140px;
+      border-radius: 3px;
+      margin-left: 20px;
+      color: #FFF;
+      outline: none;
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+    }
+    
+    #Order_Details .Content .InvoiceBtn a i {
+      margin-right: 3px;
+      color: #FFF;
+      transition: all 0.2s ease-in-out;
+    }
+    
+    #Order_Details .Content .InvoiceBtn a:hover {
+      background-color: #333;
+    }
+    
+  
+  #Order_Details .Content .Address h5 {
+      color: #000;
+  }
+  
+  #Order_Details .Content .Address span {
+      color: #7A7A7A;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 5px;
+  }
+  
+  #Order_Details .Content .Address span i {
+      margin-right: 5px;
+      font-size: 20px;
+  }
+  
+  #Order_Details .Content .Address p {
+      margin-bottom: 0;
+      font-size: 14px;
+      text-align: justify;
+      color: #7A7A7A;
+  }
+  
+  #Order_Details .Content .TotalPrice .price {
+      margin-bottom: 10px;
+      text-align: right;
+  }
+  
+  #Order_Details .Content .TotalPrice .price span {
+      text-align: right;
+      color: #000;
+      margin-bottom: 10px;
+      font-size: 16px;
+  }
+  
+  #Order_Details .Content .TotalPrice .title {
+      margin-bottom: 10px;
+  }
+  
+  #Order_Details .Content .TotalPrice .title h5 {
+      margin-bottom: 0;
+      color: #000;
+      font-size: 16px;
+  }
+  
+  #Order_Details .Content .TotalPrice .title span.titleTotal,
+  #Order_Details .Content .TotalPrice .price span.priceTotal {
+      font-weight: 600;
+  }
+  
+  #Order_Details .Content .Selected_payment {
+      margin-top: 20px;
+  }
+  
+  #Order_Details .Content .Selected_payment span {
+  font-size: 14px;
+  color: #8B8B8B;
+  }
+  
+  #Order_Details .Content .Selected_payment span img {
+  height: 35px;
+  width: 35px;
+  margin-right: 5px;
+  }
+  
+  
+  /* Login */
+  #Login {
+      padding: 60px 0;
+  }
+  
+  
+  #Login .content {
+      background-color: #F9F9F9;
+      padding: 40px;
+      width: 100%;
+      border-radius: 10px;
+  }
+  
+  #Login .login_img {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+  }
+  
+  #Login .login_img img {
+      width: auto;
+      height: 280px;
+      border-radius: 50%;
+  }
+  
+  #Login .Form .title {
+      text-align: center;
+      margin-bottom: 30px;
+  }
+  
+  
+  #Login .Form .title h4 {
+      color: #000;
+      margin-bottom: 0;
+      font-weight: 600;
+  }
+  
+  
+  #Login .Form .loginButton {
+      margin: 20px 0;
+  }
+  
+  #Login .Form .loginButton a {
+      background: #000;
+      display: inline-block;
+      text-align: center;
+      border: none;
+      padding: 7px;
+      width: 100%;
+      border-radius: 3px;
+      color: #FFF;
+      outline: none;
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  #Login .Form .loginButton a:hover {
+      background-color: #333;
+  }
+  
+  #Login .Form .MyLabel {
+      display: block;
+      position: relative;
+      pointer-events: auto;
+      padding-left: 30px;
+      left: 0;
+      cursor: pointer;
+      font-size: 16px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      opacity: 1;
+      color: #212121;
+  }
+  
+  #Login .Form .MyLabel a {
+      text-decoration: none;
+      outline: none;
+      color: #000;
+  }
+  
+  #Login .Form .MyLabel input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    
+  #Login .Form .MyLabel .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      border-radius: 3px;
+      background-color: #FFF;
+      border: 1px solid #ececec;
+  }
+    
+    
+    #Login .Form .MyLabel input:checked ~ .checkmark {
+      background-color: #000;
+      border-color: #000;
+    }
+    
+    #Login .Form .MyLabel .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    
+    #Login .Form .MyLabel input:checked ~ .checkmark:after {
+      display: block;
+    }
+    
+    #Login .Form .MyLabel .checkmark:after {
+      left: 6px;
+      top: 1px;
+      width: 7px;
+      height: 14px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  
+    #Login .Form .ForgotPass {
+        text-align: right;
+    }
+  
+    #Login .Form .ForgotPass label:hover {
+        color: #000;
+    }
+  
+    #Login .Form .CreateAccountBtn {
+        text-align: center;
+    }
+  
+    #Login .Form .CreateAccountBtn a {
+      background: transparent;
+      display: inline-block;
+      text-align: center;
+      border: none;
+      border-radius: 3px;
+      color: #000;
+      outline: none;
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  #Login .Form .CreateAccountBtn a i {
+      margin-left: 5px;
+  }
+  
+  #Login .Form .CreateAccountBtn a:hover {
+      color: #000;
+  }
+  
+  
+  
+  /* Register */
+  #Register {
+      padding: 60px 0;
+  }
+  
+  #Register .Form {
+      background-color: #F9F9F9;
+      padding: 40px;
+      width: 100%;
+      border-radius: 10px;
+  }
+  
+  #Register .Form .MyLabel {
+      display: block;
+      position: relative;
+      pointer-events: auto;
+      padding-left: 30px;
+      left: 0;
+      cursor: pointer;
+      font-size: 16px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      opacity: 1;
+      color: #212121;
+  }
+  
+  #Register .Form .MyLabel a {
+      text-decoration: none;
+      outline: none;
+      color: #000;
+      font-weight: 600;
+      transition: all 0.2s ease-in-out;
+  }
+
+  #Register .Form .MyLabel a:hover {
+      color: #333;
+  }
+  
+  #Register .Form .MyLabel input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    
+  #Register .Form .MyLabel .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      border-radius: 3px;
+      background-color: #FFF;
+      border: 1px solid #ececec;
+  }
+    
+    
+    #Register .Form .MyLabel input:checked ~ .checkmark {
+      background-color: #000;
+      border-color: #000;
+    }
+    
+    #Register .Form .MyLabel .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    
+    #Register .Form .MyLabel input:checked ~ .checkmark:after {
+      display: block;
+    }
+    
+    #Register .Form .MyLabel .checkmark:after {
+      left: 6px;
+      top: 1px;
+      width: 7px;
+      height: 14px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  
+    #Register .Form .RegisterButton {
+        margin-top: 30px;
+    }
+  
+    #Register .Form .RegisterButton a {
+      background: #000;
+      display: inline-block;
+      text-align: center;
+      border: none;
+      padding: 7px;
+      width: 100%;
+      border-radius: 3px;
+      color: #FFF;
+      outline: none;
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  #Register .Form .RegisterButton a:hover {
+      background-color: #333;
+  }
+  
+  /* Contact */
+  #Contact {
+      padding: 60px 0;
+  }
+  
+  #Contact iframe {
+      width: 100%;
+      height: 350px;
+      border: 1px solid #E6E6E6;
+  }
+  
+  
+  #Contact .getintouch h5 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #000;
+      text-transform: uppercase;
+    }
+    
+    #Contact .content {
+      margin: 30px 0;
+      width: 70%;
+      margin-bottom: 20px;
+    }
+    
+    #Contact .content ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    #Contact .content ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    #Contact .content ul li i {
+      float: left;
+      font-size: 16px;
+      color: #000;
+    }
+    
+    #Contact .content ul li .phone, 
+    #Contact .content ul li .mail, 
+    #Contact .content ul li .map {
+      margin-left: 30px;
+      font-size: 14px;
+      color: #8D8D8D;
+    }
+    
+  
+  #Contact .Form {
+      background-color: #F9F9F9;
+      padding: 40px;
+      width: 100%;
+      margin-bottom: 30px;
+      border-radius: 10px;
+  }
+  
+  #Contact .Form .socialMedia {
+      text-align: center;
+      margin-bottom: 30px;
+  }
+  
+  #Contact .Form .socialMedia  ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+  
+  #Contact .Form .socialMedia ul li{
+      display: inline-block;
+      margin-right: 20px;
+  }
+  
+  #Contact .Form .socialMedia ul li:last-of-type {
+      margin-right: 0;
+  }
+  
+  #Contact .Form .socialMedia ul li a {
+      display: flex;
+      color: #FFF;
+      width: 35px;
+      height: 35px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 30px;
+      background-color: #000;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  #Contact .Form .socialMedia ul li a i {
+      font-size: 20px;
+  }
+  
+  #Contact .Form .socialMedia ul li a:hover {
+      background-color:#333;
+      transform: scale(1.1);
+  }
+  
+  #Contact .Form .SendButton {
+      text-align: right;
+  }
+  
+  #Contact .Form .SendButton a {
+      background: #000;
+      display: inline-block;
+      text-align: center;
+      border: none;
+      padding: 7px;
+      width: 140px;
+      border-radius: 3px;
+      color: #FFF;
+      outline: none;
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  #Contact .Form .SendButton a:hover {
+      background-color: #333;
+  }
+  
+  /* AboutPage */
+  #AboutPage {
+      padding: 60px 0;
+    }
+    
+    #AboutPage .image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    
+    #AboutPage .image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+    
+    #AboutPage .title {
+      margin-bottom: 20px;
+    }
+    
+    #AboutPage .title h4 {
+      color: #000;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  
+    #AboutPage .title span {
+        font-size: 14px;
+        letter-spacing: 7px;
+        color: #C5C5C5;
+    }
+  
+    #AboutPage .title span img {
+        width: auto;
+        height: 12px;
+    }
+    
+    #AboutPage .desc p {
+      font-size: 14px;
+      text-align: justify;
+      color: #959595;
+      line-height: 1.8;
+    }
+  
+  
+  /* EditProfile */
+  #EditProfile {
+      padding: 60px 0;
+  }
+  
+  #EditProfile .Content {
+      background-color: #F9F9F9;
+      padding: 30px;
+      width: 100%;
+      min-height: 500px;
+      border-radius: 0px 5px 5px 0;
+  }
+  
+  #EditProfile .Content .title h5 {
+      color: #000;
+      font-weight: 600;
+  }
+  
+  .leftBar .Links {
+      background-color: #000;
+      overflow: hidden;
+      min-height: 500px;
+      border-radius: 5px 0 0 5px;
+  }
+  
+  .leftBar .Links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+  
+  .leftBar .Links ul li {
+      position: relative;
+      width: 100%;
+  }
+  
+  .leftBar .Links ul li a {
+      display: block;
+      text-decoration: none;
+      outline: none;
+      color: #848484;
+      padding: 20px;
+      border-bottom: 1px solid #484848;
+      border-left: 4px solid transparent;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  
+  .leftBar .Links ul li a.active,
+  .leftBar .Links ul li a:hover {
+      color: #FFF;
+      border-left-color: #FFF;
+      padding-left: 30px;
+  }
+  
+  .leftBar .Links ul li a i {
+      font-size: 16px;
+      margin-right: 5px;
+  }
+  
+  .leftBar .Links ul li a i.fa-angle-right {
+      position: absolute;
+      right: 10px;
+      top: 22px;
+  }
+  
+  .leftBar .Links ul li .LogOutBtn {
+      text-align: center;
+      margin: 30px 0;
+  }
+  
+  .leftBar .Links ul li .LogOutBtn a {
+      background: #FFF;
+      display: inline-block;
+      text-align: center;
+      border: none;
+      padding: 7px;
+      width: 140px;
+      border-radius: 3px;
+      color: #E60000;
+      outline: none;
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  .leftBar .Links ul li .LogOutBtn a:hover {
+      background-color: #333;
+      color: #FFF;
+  }
+  
+  
+  #EditProfile .saveButton {
+      text-align: right;
+      margin-top: 10px;
+  }
+  
+  #EditProfile .saveButton a {
+      background: #000;
+      display: inline-block;
+      text-align: center;
+      border: none;
+      padding: 7px;
+      width: 150px;
+      border-radius: 3px;
+      color: #FFF;
+      outline: none;
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  #EditProfile .saveButton a:hover {
+      background-color: #333;
+  }
+  
+  
+  /* MyOrders */
+  #MyOrders {
+      padding: 60px 0;
+  }
+  
+  #MyOrders .Content {
+      background-color: #F9F9F9;
+      padding: 30px;
+      width: 100%;
+      min-height: 500px;
+  }
+  
+  #MyOrders .Content .title h5 {
+      color: #000;
+      font-weight: 600;
+  }
+  
+  #MyOrders .table td, 
+  #MyOrders .table th {
+      text-align: left;
+  }
+  
+  #MyOrders .table-striped tbody tr:nth-of-type(odd) {
+      background-color: transparent;
+  }
+  
+  #MyOrders .table td a {
+      color: #8b8a8a;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  #MyOrders .table td a:hover {
+      color: #000;
+  }
+  
+  #MyOrders .table td span {
+      color: #AEABAB;
+      margin: 0 5px;
+  }
+  
+  
+  /* ChangePassword */
+  #ChangePassword {
+      padding: 60px 0;
+  }
+  
+  #ChangePassword .Content {
+      background-color: #F9F9F9;
+      padding: 30px;
+      width: 100%;
+      min-height: 500px;
+      border-radius: 0 5px 5px 0;
+  }
+  
+  #ChangePassword .Content .title h5 {
+      color: #000;
+      font-weight: 600;
+  }
+  
+  #ChangePassword .Form .SaveButton {
+      text-align: right;
+  }
+  
+  #ChangePassword .Form .SaveButton a {
+      background: #000;
+      display: inline-block;
+      text-align: center;
+      border: none;
+      padding: 7px;
+      width: 150px;
+      border-radius: 3px;
+      color: #FFF;
+      outline: none;
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  #ChangePassword .Form .SaveButton a:hover {
+      background-color: #333;
+  }
+  
+  
+  /* MyFavourites */
+  .MyFavourites .Content {
+      background-color: #F9F9F9;
+      padding: 30px;
+      width: 100%;
+      min-height: 500px;
+      border-radius: 0 5px 5px 0;
+  }
+  
+  .MyFavourites .Content .title h5 {
+      color: #000;
+      font-weight: 600;
+  }
+  
+  /* MyAddress */
+  #MyAddress {
+      padding: 60px 0;
+  }
+  
+  #MyAddress .Content {
+      background-color: #F9F9F9;
+      padding: 30px;
+      width: 100%;
+      min-height: 500px;
+      border-radius: 0 5px 5px 0;
+  }
+  
+  #MyAddress .Content .title h5 {
+      color: #000;
+      font-weight: 600;
+  }
+  
+  #MyAddress .content .NewAddressButton {
+      text-align: right;
+      margin-bottom: 20px;
+  }
+  
+  #MyAddress .content .NewAddressButton a {
+      background: #000;
+      display: inline-block;
+      text-align: center;
+      border: none;
+      padding: 7px;
+      width: 200px;
+      border-radius: 3px;
+      color: #FFF;
+      outline: none;
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  #MyAddress .content .NewAddressButton a i {
+      font-size: 12px;
+      margin-right: 5px;
+      padding: 7px;
+      width: 25px;
+      height: 25px;
+      background-color: #FFF;
+      border-radius: 50%;
+      color: #000;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  #MyAddress .content .NewAddressButton a:hover {
+      background-color: #333;
+  }
+  
+  #MyAddress .content .NewAddressButton a:hover i {
+      color: #333;
+  }
+  
+  #MyAddress .content ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    #MyAddress .content ul li {
+        float: left;
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    
+    #MyAddress .content ul li input[type="radio"][id^="address"] {
+      display: none;
+    }
+    
+    #MyAddress .content ul li label {
+      border: 1px solid #9E9E9E;
+      background-color: transparent;
+      padding: 20px;
+      display: block;
+      cursor: pointer;
+      text-align: left;
+      color: #9E9E9E;
+      border-radius: 3px;
+    }
+  
+    #MyAddress .content ul li label h6 {
+      font-weight: 600;
+    }
+  
+    #MyAddress .content ul li label h6 i {
+        margin-right: 5px;
+        font-size: 20px;
+    }
+  
+    #MyAddress .content ul li label p {
+        margin-bottom: 0;
+        color: #a5a4a4;
+        font-size: 14px;
+    }
+  
+  
+    #MyAddress .content ul li label .checked {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      opacity: 0;
+      visibility: hidden;
+    }
+    
+    #MyAddress .content ul li label .checked span {
+      font-size: 14px;
+      color: #000;
+    }
+    
+    #MyAddress .content ul li input:checked + label {
+      border-color: #000;
+      background-color: #FFF;
+    }
+  
+    #MyAddress .content ul li input:checked + label h6,
+    #MyAddress .content ul li input:checked + label p {
+        color: #000;
+    }
+  
+    #MyAddress .content ul li input:checked + label .checked {
+      opacity: 1;
+      visibility: visible;
+    }
+  
+  
+    #MyAddress .content .Form {
+        display: none;
+    }
+  
+   
+  
+  
+    #MyAddress .content .Form .FormButtons {
+      text-align: right;
+  }
+  
+  #MyAddress .content .Form .FormButtons .AddBtn {
+      background: #000;
+      display: inline-block;
+      text-align: center;
+      border: none;
+      padding: 7px;
+      width: 150px;
+      border-radius: 3px;
+      margin-left: 10px;
+      color: #FFF;
+      outline: none;
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  #MyAddress .content .Form .FormButtons .AddBtn:hover {
+      background-color: #333;
+  }
+  
+  #MyAddress .content .Form .FormButtons .CancelBtn {
+      background: transparent;
+      display: inline-block;
+      text-align: center;
+      border: 1px solid #000;
+      padding: 5px;
+      width: 150px;
+      border-radius: 3px;
+      color: #000;
+      outline: none;
+      box-shadow: none;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  #MyAddress .content .Form .FormButtons .CancelBtn:hover {
+      background-color: #333;
+      border-color: #333;
+      color: #FFF;
+  }
+  
+  #MyAddress .nice-select {
+      float: none;
+      border-radius: 3px;
+      height: 42px;
+      line-height: 40px;
+      border: solid 1px #ececec;
+      padding-left: 18px;
+      padding-right: 30px;
+      text-align: left !important;
+    }
+    
+    #MyAddress .nice-select .list {
+      left: 0;
+      right: unset;
+      border-radius: 0;
+    }
+    
+    #MyAddress .nice-select .option {
+      text-align: left;
+      margin-bottom: 0;
+      color: #000 !important;
+  }
+  
+  #MyAddress .nice-select .option:hover, 
+  #MyAddress .nice-select .option.focus, 
+  #MyAddress .nice-select .option.selected.focus {
+      background-color: #000 !important;
+      color: #FFF !important;
+  }
+    
+    #MyAddress .nice-select:active, 
+    #MyAddress .nice-select.open, 
+    #MyAddress .nice-select:focus {
+      border-color: #000;
+    }
+    
+    #MyAddress .nice-select:hover {
+      border-color: #000;
+    }
+    
+    #MyAddress .nice-select:after {
+      right: 12px;
+      left: unset;
+    }
+
+
+
+
+/* RewardPoints */
+#RewardPoints {
+    padding: 60px 0;
+}
+
+#RewardPoints .Content {
+    background-color: #F9F9F9;
+    padding: 30px;
+    width: 100%;
+    min-height: 500px;
+    border-radius: 0 5px 5px 0;
+}
+
+#RewardPoints .Content .title h5 {
+    color: #000;
+    font-weight: 600;
+}
+
+#RewardPoints .Content .points h5 {
+    font-size: 18px;
+    color: #686868;
+}
+
+.Addresses .content .Form {
+    background-color: #F9F9F9;
+    padding: 30px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.Addresses .content .NextButton {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.Addresses .content .NextButton a {
+    background: transparent;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #000;
+    padding: 5px;
+    width: 150px;
+    border-radius: 3px;
+    color: #000;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.Addresses .content .NextButton a:hover {
+    background-color: #333;
+    color: #FFF;
+}
+
+.Addresses .content .NewAddressButton {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+
+/**********************************************/
+
+
+.Sizes_PopUp {
+    padding: 30px;
+    box-shadow: 2px 3px 10px #2727274d;
+}
+
+.Sizes_PopUp .title {
+    border-bottom: 1px solid #e9e6e6;
+    margin-bottom: 20px;
+}
+
+.Sizes_PopUp .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #F9F9F9;
+}
+
+.Sizes_PopUp .Test_Tabs {
+    justify-content: left;
+}
+
+.Sizes_PopUp .nav-pills .nav-link {
+    padding: 3px;
+    border-radius: 0;
+    width: 50px;
+    font-size: 14px;
+    margin-right: 0 !important;
+}
+
+.Sizes_PopUp .table-bordered td .Size_title {
+    font-weight: 600;
+}
+
+.Sizes_PopUp .table thead {
+    background-color: #FFF;
+    border: 1px solid #e4e4e4;
+}
+
+.Sizes_PopUp .table thead th {
+    color: #000;
+    font-weight: 600;
+}
+
+
+.navbar .nice-select {
+    border: none;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 0;
+}
+
+.navbar .nice-select li {
+    display: block !important;
+    margin-left: unset !important;
+}
+
+.navbar .links ul li {
+    vertical-align: middle;
+    margin-left: 20px;
+}
+/******************************************/
+
+@media only screen and (max-width: 600px) {
+    body,.MainBody {
+        padding-top: 81px;
+    }
+    .navbar-brand img,
+    .MainNav .navbar-brand img {
+        height: 65px;
+    }
+    .owl-nav>div {
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+    }
+    .owl-nav .owl-prev {
+        right: 0px;
+    }
+    .owl-nav .owl-next {
+        left: 0px;
+    }
+    .formobile {
+        display: block;
+    }
+    .navbar {
+        background-color: #FFF;
+    }
+    .MainNav {
+        padding: .5rem 1rem;
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 75%;
+        padding-top: 70px;
+        padding-left: 20px;
+        background-color: #FFF;
+        z-index: 1;
+    }
+
+    .navbar-collapse.collapsing {
+        right: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+        transition: right 300ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: right 500ms ease-in-out;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #000 !important;
+    }
+    #navbarContent {
+        height: 100vh;
+        padding-bottom: 70px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    .navbar-nav {
+        text-align: left;
+    }
+    .navbar .links {
+        display: none;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        border: none;
+        margin: 10px 0;
+        padding: 5px 0;
+    }
+    #dropdownMenu_2 {
+        background-color: #FFF;
+        box-shadow: none;
+    }
+    #dropdownMenu_2 .dropdown-item {
+        padding-left: 2.5rem;
+    }
+    .dropdown-item {
+        color: #000;
+    }
+    .navbar-light .navbar-nav .nav-link.active::after, 
+    .navbar-light .navbar-nav .nav-link::after {
+        content: none;
+    }
+    .navbar-light .navbar-nav .nav-link.active::after, 
+    .navbar-light .navbar-nav .nav-link:hover::after {
+        width: 0;
+    }
+
+
+
+    .contentSlider .slider_line {
+        height: 6px !important;
+        margin: 5px auto;
+    }
+    .contentSlider h1 {
+        font-size: 16px;
+    }
+    .contentSlider h5 {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .contentSlider p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .contentSlider a {
+        padding: 3px;
+        width: 90px;
+        font-size: 12px;
+    }
+    .slick-dots {
+        display: none !important;
+    }
+
+
+
+    .section_header .section-title {
+        font-size: 22px;
+    }
+    .section_header .header_line img {
+        height: 10px;
+    }
+
+
+    .collection_item .image {
+        height: auto;
+    }
+    .collection_item .title h5 {
+        font-size: 16px;
+    }
+    #Collections .moreButton a {
+        padding: 3px;
+        width: 100px;
+        font-size: 14px;
+    }
+
+
+    .product_item .image {
+        height: auto;
+    }
+    #Products .moreButton a {
+        padding: 3px;
+        width: 100px;
+        font-size: 14px;
+    }
+
+
+
+    .footer {
+        background-position: center;
+    }
+    .title-widget {
+        font-size: 16px;
+    }
+    .widget_nav_menu .linksList li {
+        font-size: 12px;
+    }
+    .widget_nav_menu .linksList .Links ul li div {
+        font-size: 12px;
+    }
+    .newsteller span {
+        font-size: 12px;
+    }
+    .newsteller .email-box .subscribeInp {
+        font-size: 12px;
+    }
+    .newsteller .subscribeButton button {
+        width: 40%;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .DownloadApp {
+        font-size: 12px;
+    }
+    .widget_nav_menu .app-store, .widget_nav_menu .google-play {
+        height: 24px;
+    }
+    .copyright, .language {
+        text-align: center;
+    }
+    .language {
+        padding-bottom: 0;
+    }
+    .copyright p, .language p {
+        font-size: 12px;
+    }
+    .search_box_popup .search_input,
+    .search_box_popup .search_btn {
+        font-size: 14px;
+    }
+    .copyright img {
+        width: 40px;
+    }
+
+
+
+
+
+
+
+    #Category_page .Category_title h2 {
+        font-size: 20px;
+    }
+    #Category_page .Filter_Mobile {
+        display: none;
+    }
+    #Category_page .Filter_Btn {
+    display: block;
+    }
+    .simple-pagination ul {
+        text-align: center;
+    }
+
+  
+    #ProductDetails .Product_content .title h4 {
+        font-size: 18px;
+    }
+    #ProductDetails .Product_content .price span {
+        font-size: 16px;
+    }
+    #ProductDetails .Product_content .price {
+        margin-top: 5px;
+    }
+    #ProductDetails .Product_content .desc p ,
+    #ProductDetails .Product_content .Reviews p {
+        font-size: 12px;
+    }
+    #ProductDetails .Product_content .AddToCartBtn a {
+        font-size: 14px;
+    }
+    #ProductDetails .Related_title h2 {
+        font-size: 24px;
+    }
+    .lSSlideOuter {
+        margin-bottom: 20px;
+    }
+    .lSSlideOuter .lightSlider {
+        /* height: 295px !important; */
+        height: auto;
+    }
+    #ProductDetails .SizeColor ul li {
+        margin-right: 10px;
+    }
+    #ProductDetails .SizeColor ul li span {
+        font-size: 12px;
+    }
+    #ProductDetails .Product_content .AddToFav img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+
+
+
+
+
+    #ShoppingCart .checkoutBtn {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #ShoppingCart .ContinueBtn {
+        text-align: center;
+    }
+    #ShoppingCart .checkoutBtn a ,
+    #ShoppingCart .ContinueBtn a {
+        font-size: 14px;
+        width: 100%;
+    }
+    .table-bordered td, .table-bordered th {
+        font-size: 12px;
+    }
+    .table-bordered .deletecard {
+        padding: 4px;
+        padding-left: 4px;
+        width: 20px;
+        height: 20px;
+    }
+    #ShoppingCart .totalPrice .title span,
+    #ShoppingCart .totalPrice .price span {
+        font-size: 14px;
+    }
+    #ShoppingCart .DiscountCode {
+        text-align: center;
+    }
+    #ShoppingCart .DiscountCode .title {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    #ShoppingCart .DiscountCode .couponBtn {
+        margin-top: 10px;
+    }
+    #ShoppingCart .buttons {
+        text-align: center;
+    }
+    #ShoppingCart .buttons .ContinueBtn {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    #ShoppingCart .buttons .ContinueBtn,
+    #ShoppingCart .buttons .UpdateBtn {
+        font-size: 14px;
+    }
+
+
+
+    #Checkout .Content .Address ,
+    #Checkout .Content .PaymentMethod .title ,
+    #Checkout .Content .PaymentMethod ul ,
+    #Checkout .Content .PayButton {
+        text-align: center;
+    }
+    #Checkout .Content .TotalPrice .title span ,
+    #Checkout .Content .TotalPrice .price span ,
+    #Checkout .Content .Address span {
+        font-size: 14px;
+    }
+    #Checkout .Content .Address h5 ,
+    #Checkout .Content .Address span i {
+        font-size: 18px;
+    }
+    #Checkout .Content .Address p {
+        font-size: 12px;
+    }
+    #Checkout .Content .PaymentMethod .title {
+        margin-bottom: 20px;
+    }
+    #Checkout .Content .PaymentMethod .title h5 ,
+    #Checkout .Content .PayButton a {
+        font-size: 14px;
+    }
+
+
+    #Order_Details .Content .OrderName .title h5 {
+        font-size: 18px;
+    }
+    #Order_Details .Content .OrderName .title {
+        text-align: center;
+    }
+    #Order_Details .Content .InvoiceBtn {
+        text-align: center;
+    }
+    #Order_Details .Content .OrderName .Status {
+        font-size: 14px;
+        margin-bottom: 10px;
+        display: block;
+    }
+    #Order_Details .Content .InvoiceBtn a {
+        font-size: 14px;
+        margin-left: 0;
+    }
+    #Order_Details .Content .TotalPrice .title h5 ,
+    #Order_Details .Content .TotalPrice .price span ,
+    #Order_Details .Content .Address span {
+        font-size: 14px;
+    }
+    #Order_Details .Content .Address h5 {
+        font-size: 16px;
+    }
+    #Order_Details .Content .Address span i {
+        font-size: 16px;
+    }
+    #Order_Details .Content .Address p ,
+    #Order_Details .Content .Selected_payment span {
+        font-size: 12px;
+    }
+
+
+    #Login .content {
+        padding: 30px;
+    }
+    #Login .login_img img {
+        height: 180px;
+    }
+    #Login .Form .MyLabel ,
+    #Login .Form .ForgotPass label {
+        font-size: 14px;
+    }
+    #Login .Form .title h4 {
+        font-size: 18px;
+    }
+    #Login .Form .ForgotPass {
+        text-align: center;
+    }
+    #Login .Form .loginButton {
+        margin-top: 20px;
+    }
+    #Login .Form .loginButton a,
+    #Login .Form .CreateAccountBtn a {
+        font-size: 14px;
+    }
+
+
+
+
+
+    #Register .Form {
+        padding: 30px;
+    }
+    #Register .Form .MyLabel {
+        font-size: 14px;
+    }
+    #Register .Form .RegisterButton a {
+        font-size: 14px;
+    }
+
+
+
+    #Contact iframe {
+        height: 300px;
+    }
+    #Contact .getintouch h5 {
+        font-size: 18px;
+    }
+    #Contact .content {
+        width: 100%;
+    }
+    #Contact .content ul li .phone, 
+    #Contact .content ul li .mail, 
+    #Contact .content ul li .map {
+        font-size: 12px;
+    }
+    #Contact .Form {
+        padding: 30px;
+    }
+    #Contact .Form .socialMedia ul li {
+        margin-right: 10px;
+    }
+    #Contact .Form .socialMedia ul li a {
+        width: 30px;
+        height: 30px;
+    }
+    #Contact .Form .socialMedia ul li a i {
+        font-size: 16px;
+    }
+    #Contact .Form .SendButton a {
+        font-size: 14px;
+        width: 100%;
+    }
+
+
+
+    #AboutPage .title h4 {
+        font-size: 18px;
+    }
+    #AboutPage .desc p,
+    #AboutPage .title span {
+        font-size: 12px;
+    }
+    #AboutPage .title span img {
+        height: 10px;
+    }
+
+
+    
+    .leftBar .Links,
+    #EditProfile .Content {
+        min-height: unset;
+        height: auto;
+    }
+    #EditProfile .saveButton a {
+        font-size: 14px;
+        width: 100%;
+    }
+
+
+
+  
+
+
+    #ChangePassword .Form .SaveButton a {
+        width: 100%;
+        font-size: 14px;
+    }
+
+
+    #MyAddress .content .NewAddressButton {
+        text-align: center;
+    }
+    #MyAddress .content .NewAddressButton a {
+        font-size: 14px;
+    }
+    #MyAddress .content .NewAddressButton a i {
+        font-size: 11px;
+        padding: 6px;
+        width: 20px;
+        height: 20px;
+    }
+    #MyAddress .content ul li label h6 {
+        font-size: 14px;
+    }
+    #MyAddress .content ul li label h6 i {
+        font-size: 16px;
+    }
+    #MyAddress .content ul li label p,
+    #MyAddress .content ul li label .checked span {
+        font-size: 12px;
+    }
+    #MyAddress .content ul li label .checked {
+        top: 10px;
+    }
+    #MyAddress .content .Form .CityMobile {
+        margin-bottom: 20px;
+    }
+    #MyAddress .content .Form .FormButtons .CancelBtn {
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    #MyAddress .content .Form .FormButtons .AddBtn {
+        width: 100%;
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+
+
+
+    .Addresses .content .NewAddressButton {
+        justify-content: center;
+    }
+    .Addresses .content .NextButton {
+        text-align: center;
+    }
+    .Addresses .content .NextButton a {
+        width: 200px;
+        font-size: 14px;
+    }
+
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    body,.MainBody {
+        padding-top: 81px;
+    }
+    .navbar-brand img,
+    .MainNav .navbar-brand img {
+        height: 65px;
+    }
+    .owl-nav .owl-next {
+        left: 50px;
+    }
+    .owl-nav .owl-prev {
+        right: 50px;
+    }
+    .formobile {
+        display: block;
+    }
+    .navbar {
+        background-color: #FFF;
+    }
+    .MainNav {
+        padding: .5rem 1rem;
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 40%;
+        padding-top: 70px;
+        padding-left: 20px;
+        background-color: #FFF;
+        z-index: 1;
+    }
+
+    .navbar-collapse.collapsing {
+        right: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+        transition: right 300ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: right 500ms ease-in-out;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #000 !important;
+    }
+    .Search_Icon {
+        right: 75px;
+    }
+    #navbarContent {
+        height: 100vh;
+        padding-bottom: 70px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    .navbar-nav {
+        text-align: left;
+    }
+    .navbar .links {
+        display: none;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        border: none;
+        margin: 10px 0;
+        padding: 5px 0;
+    }
+    #dropdownMenu_2 {
+        background-color: #FFF;
+        box-shadow: none;
+    }
+    #dropdownMenu_2 .dropdown-item {
+        padding-left: 2.5rem;
+    }
+    .dropdown-item {
+        color: #000;
+    } 
+    .navbar-light .navbar-nav .nav-link.active::after, 
+    .navbar-light .navbar-nav .nav-link::after {
+        content: none;
+    }
+    .navbar-light .navbar-nav .nav-link.active::after, 
+    .navbar-light .navbar-nav .nav-link:hover::after {
+        width: 0;
+    }
+
+
+
+    .contentSlider h1 {
+        font-size: 30px;
+    }
+    .contentSlider h5 {
+        font-size: 24px;
+    }
+    .contentSlider .slider_line {
+        height: 10px !important;
+        margin: 5px auto;
+    }
+    .contentSlider p {
+        font-size: 16px;
+    }
+    .contentSlider a {
+        padding: 3px;
+        width: 100px;
+        font-size: 14px;
+    }
+    .slick-dots li {
+        margin: -3px;
+    }
+    .slick-dots li button:before {
+        font-size: 30px;
+    }
+  
+
+
+
+ 
+
+    .section_header .section-title {
+        font-size: 24px;
+    }
+    .section_header .header_line img {
+        height: 10px;
+    }
+
+
+
+
+
+    .collection_item .image {
+        height: auto;
+    }
+    .collection_item .title h5 {
+        font-size: 16px;
+    }
+    #Collections .moreButton a {
+        padding: 3px;
+        width: 100px;
+        font-size: 14px;
+    }
+
+
+
+    .product_item .image {
+        height: 337px;
+    }
+    #Products .moreButton a {
+        padding: 3px;
+        width: 100px;
+        font-size: 14px;
+    }
+  
+
+
+
+
+    .footer {
+        background-position: center;
+    }
+    .title-widget {
+        font-size: 16px;
+    }
+    .widget_nav_menu .linksList li {
+        font-size: 12px;
+    }
+    .widget_nav_menu .linksList .Links ul li div {
+        font-size: 12px;
+    }
+    .newsteller span {
+        font-size: 12px;
+    }
+    .newsteller .email-box .subscribeInp {
+        font-size: 12px;
+    }
+    .newsteller .subscribeButton button {
+        width: 40%;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .DownloadApp {
+        font-size: 12px;
+    }
+    .widget_nav_menu .app-store, .widget_nav_menu .google-play {
+        height: 24px;
+    }
+    .copyright p, .language p {
+        font-size: 9px;
+    }
+    .search_box_popup .search_input,
+    .search_box_popup .search_btn {
+        font-size: 14px;
+    }
+    .copyright img {
+        width: 40px;
+    }
+
+
+
+
+    
+    #Category_page .Category_title h2 {
+        font-size: 24px;
+    }
+    #Category_page .Filter_Mobile {
+    display: none;
+    }
+    #Category_page .Filter_Btn {
+    display: block;
+    }
+    .simple-pagination ul {
+        text-align: center;
+    }
+
+
+
+   
+    #ProductDetails .Product_content .title h4 {
+        font-size: 18px;
+    }
+    #ProductDetails .Product_content .price span {
+        font-size: 16px;
+    }
+    #ProductDetails .Product_content .price {
+        margin-top: 5px;
+    }
+    #ProductDetails .Product_content .desc p ,
+    #ProductDetails .Product_content .Reviews p {
+        font-size: 12px;
+    }
+    #ProductDetails .Product_content .AddToCartBtn a {
+        font-size: 14px;
+    }
+    #ProductDetails .Related_title h2 {
+        font-size: 24px;
+    }
+    .lSSlideOuter {
+        margin-bottom: 20px;
+    }
+    .lSSlideOuter .lightSlider {
+        /* height: 515px !important; */
+        height: auto;
+    }
+    #ProductDetails .SizeColor ul li {
+        margin-right: 10px;
+    }
+    #ProductDetails .SizeColor ul li span {
+        font-size: 12px;
+    }
+    #ProductDetails .Product_content .AddToFav img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+
+
+
+
+    .table-bordered td, .table-bordered th {
+        font-size: 12px;
+    }
+    .table-bordered .deletecard {
+        padding: 4px;
+        padding-left: 4px;
+        width: 20px;
+        height: 20px;
+    }
+    #ShoppingCart .totalPrice .title span,
+    #ShoppingCart .totalPrice .price span {
+        font-size: 14px;
+    }
+    #ShoppingCart .checkoutBtn a ,
+    #ShoppingCart .ContinueBtn a {
+        font-size: 14px;
+    }
+    #ShoppingCart .DiscountCode {
+        text-align: center;
+    }
+    #ShoppingCart .DiscountCode .title {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    #ShoppingCart .DiscountCode .couponBtn {
+        margin-top: 10px;
+    }
+    #ShoppingCart .buttons {
+        text-align: center;
+    }
+    #ShoppingCart .buttons .ContinueBtn,
+    #ShoppingCart .buttons .UpdateBtn {
+        font-size: 14px;
+        width: 180px;
+    }
+
+
+
+    #Checkout .Content .TotalPrice .title span ,
+    #Checkout .Content .TotalPrice .price span ,
+    #Checkout .Content .Address span {
+        font-size: 14px;
+    }
+    #Checkout .Content .Address h5 ,
+    #Checkout .Content .Address span i {
+        font-size: 18px;
+    }
+    #Checkout .Content .Address p {
+        font-size: 12px;
+    }
+    #Checkout .Content .PaymentMethod .title {
+        margin-bottom: 20px;
+    }
+    #Checkout .Content .PaymentMethod .title h5 ,
+    #Checkout .MyLabel ,
+    #Checkout .Content .PayButton a {
+        font-size: 14px;
+        width: 160px;
+    }
+
+
+
+    #Order_Details .Content .OrderName .title h5 {
+        font-size: 18px;
+    }
+    #Order_Details .Content .OrderName .title {
+        text-align: center;
+    }
+    #Order_Details .Content .InvoiceBtn {
+        text-align: center;
+    }
+    #Order_Details .Content .OrderName .Status ,
+    #Order_Details .Content .InvoiceBtn a {
+        font-size: 14px;
+    }
+    #Order_Details .Content .TotalPrice .title h5 ,
+    #Order_Details .Content .TotalPrice .price span ,
+    #Order_Details .Content .Address span {
+        font-size: 14px;
+    }
+    #Order_Details .Content .Address h5 {
+        font-size: 16px;
+    }
+    #Order_Details .Content .Address span i {
+        font-size: 16px;
+    }
+    #Order_Details .Content .Address p ,
+    #Order_Details .Content .Selected_payment span {
+        font-size: 12px;
+    }
+
+
+
+    #Login .content {
+        padding: 30px;
+    }
+    #Login .login_img img {
+        height: 180px;
+    }
+    #Login .Form .MyLabel ,
+    #Login .Form .ForgotPass label {
+        font-size: 14px;
+    }
+    #Login .Form .title h4 {
+        font-size: 18px;
+    }
+    #Login .Form .loginButton {
+        margin-top: 20px;
+    }
+    #Login .Form .loginButton a,
+    #Login .Form .CreateAccountBtn a {
+        font-size: 14px;
+    }
+  
+
+
+
+    #Register .Form {
+        padding: 30px;
+    }
+    #Register .Form .MyLabel {
+        font-size: 14px;
+    }
+    #Register .Form .RegisterButton a {
+        font-size: 14px;
+    }
+
+
+    #Contact iframe {
+        height: 300px;
+    }
+    #Contact .getintouch h5 {
+        font-size: 18px;
+    }
+    #Contact .content {
+        width: 100%;
+    }
+    #Contact .content ul li .phone, 
+    #Contact .content ul li .mail, 
+    #Contact .content ul li .map {
+        font-size: 12px;
+    }
+    #Contact .Form {
+        padding: 30px;
+    }
+    #Contact .Form .socialMedia ul li {
+        margin-right: 10px;
+    }
+    #Contact .Form .socialMedia ul li a {
+        width: 30px;
+        height: 30px;
+    }
+    #Contact .Form .socialMedia ul li a i {
+        font-size: 16px;
+    }
+    #Contact .Form .SendButton a {
+        font-size: 14px;
+        width: 100%;
+    }
+
+
+    #AboutPage .title h4 {
+        font-size: 18px;
+    }
+    #AboutPage .desc p,
+    #AboutPage .title span {
+        font-size: 12px;
+    }
+    #AboutPage .title span img {
+        height: 10px;
+    }
+
+
+   
+    .leftBar .Links,
+    #EditProfile .Content {
+        min-height: unset;
+        height: auto;
+    }
+    #EditProfile .saveButton a {
+        font-size: 14px;
+        width: 100%;
+    }
+
+
+
+
+
+
+    #ChangePassword .Form .SaveButton a {
+        width: 100%;
+        font-size: 14px;
+    }
+
+
+    #MyAddress .content .NewAddressButton a {
+        font-size: 14px;
+    }
+    #MyAddress .content .NewAddressButton a i {
+        font-size: 11px;
+        padding: 6px;
+        width: 20px;
+        height: 20px;
+    }
+    #MyAddress .content ul li label h6 {
+        font-size: 14px;
+    }
+    #MyAddress .content ul li label h6 i {
+        font-size: 16px;
+    }
+    #MyAddress .content ul li label p,
+    #MyAddress .content ul li label .checked span {
+        font-size: 12px;
+    }
+    #MyAddress .content ul li label .checked {
+        top: 10px;
+    }
+    #MyAddress .content .Form .FormButtons .CancelBtn,
+    #MyAddress .content .Form .FormButtons .AddBtn  {
+        font-size: 14px;
+    }
+
+
+
+
+    .Addresses .content .NextButton a {
+        font-size: 14px;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    body,.MainBody {
+        padding-top: 81px;
+    }
+    .navbar-brand img,
+    .MainNav .navbar-brand img {
+        height: 65px;
+    }
+    .owl-nav .owl-next {
+        left: 30px;
+    }
+    .owl-nav .owl-prev {
+        right: 30px;
+    }
+    .formobile {
+        display: block;
+    }
+    .navbar {
+        background-color: #FFF;
+    }
+    .MainNav {
+        padding: .5rem 1rem;
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 40%;
+        padding-top: 70px;
+        padding-left: 20px;
+        background-color: #FFF;
+        z-index: 1;
+    }
+
+    .navbar-collapse.collapsing {
+        right: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+        transition: right 300ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: right 500ms ease-in-out;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #000 !important;
+    }
+    .Search_Icon {
+        right: 75px;
+    }
+    #navbarContent {
+        height: 100vh;
+        padding-bottom: 70px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    .navbar-nav {
+        text-align: left;
+    }
+    .navbar .links {
+        display: none;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        border: none;
+        margin: 10px 0;
+        padding: 5px 0;
+    }
+    #dropdownMenu_2 {
+        background-color: #FFF;
+        box-shadow: none;
+    }
+    #dropdownMenu_2 .dropdown-item {
+        padding-left: 2.5rem;
+    }
+    .dropdown-item {
+        color: #000;
+    }
+    .navbar-light .navbar-nav .nav-link.active::after, 
+    .navbar-light .navbar-nav .nav-link::after {
+        content: none;
+    }
+    .navbar-light .navbar-nav .nav-link.active::after, 
+    .navbar-light .navbar-nav .nav-link:hover::after {
+        width: 0;
+    }
+
+
+
+    .contentSlider h1 {
+        font-size: 35px;
+    }
+    .contentSlider h5 {
+        font-size: 28px;
+    }
+    .contentSlider p {
+        font-size: 18px;
+    }
+    .contentSlider a {
+        padding: 3px;
+        width: 100px;
+        font-size: 14px;
+    }
+    .slick-dots li {
+        margin: -3px;
+    }
+    .slick-dots li button:before {
+        font-size: 30px;
+    }
+   
+
+
+
+    .section_header .section-title {
+        font-size: 24px;
+    }
+    .section_header .header_line img {
+        height: 10px;
+    }
+
+
+
+ 
+
+
+    .collection_item .image {
+        height: 303px;
+    }
+    .collection_item .right_image {
+        height: 137px;
+    }
+    .collection_item .title h5 {
+        font-size: 16px;
+    }
+    #Collections .moreButton a {
+        padding: 3px;
+        width: 100px;
+        font-size: 14px;
+    }
+
+
+    .product_item .image {
+        height: 295px;
+    }
+    .product_item .title h5,
+    .product_item .price span {
+        font-size: 14px;
+    }
+    .product_item .cat span {
+        font-size: 12px;
+    }
+    .product_item .fav_icon img {
+        height: 28px;
+    }
+    .product_item .new_Prod span {
+        padding: 2px 10px;
+        font-size: 12px;
+    }
+    #Products .moreButton a {
+        padding: 3px;
+        width: 100px;
+        font-size: 14px;
+    }
+
+
+
+    .footer {
+        background-position: center;
+    }
+    .title-widget {
+        font-size: 16px;
+    }
+    .widget_nav_menu .linksList li {
+        font-size: 12px;
+    }
+    .widget_nav_menu .linksList .Links ul li div {
+        font-size: 12px;
+    }
+    .newsteller span {
+        font-size: 12px;
+    }
+    .newsteller .email-box .subscribeInp {
+        font-size: 12px;
+    }
+    .newsteller .subscribeButton button {
+        padding: 5px;
+        font-size: 12px;
+    }
+    .DownloadApp {
+        font-size: 12px;
+    }
+    .widget_nav_menu .app-store, .widget_nav_menu .google-play {
+        height: 24px;
+    }
+    .copyright p, .language p {
+        font-size: 12px;
+    }
+    .search_box_popup .search_input,
+    .search_box_popup .search_btn {
+        font-size: 14px;
+    }
+    .copyright img {
+        width: 40px;
+    }
+
+
+
+
+
+
+
+ 
+    #Category_page .Filter_Mobile {
+        display: none;
+    }
+    #Category_page .Filter_Btn {
+    display: block;
+    }
+
+
+
+    #ProductDetails .Product_content .title h4 {
+        font-size: 18px;
+    }
+    #ProductDetails .Product_content .price span {
+        font-size: 16px;
+    }
+    #ProductDetails .Product_content .price {
+        margin-top: 5px;
+    }
+    #ProductDetails .Product_content .desc p ,
+    #ProductDetails .Product_content .Reviews p {
+        font-size: 12px;
+    }
+    #ProductDetails .Product_content .AddToCartBtn a {
+        font-size: 14px;
+    }
+    #ProductDetails .Related_title h2 {
+        font-size: 24px;
+    }
+    .lSSlideOuter .lightSlider {
+        /* height: 275px !important; */
+        height: auto;
+    }
+    #ProductDetails .Product_content .AddToFav img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+
+
+
+
+    #Order_Details .Content .InvoiceBtn a {
+        margin-left: 10px;
+    }
+
+
+    #Login .login_img img {
+        height: 220px;
+    }
+    #Login .Form .MyLabel ,
+    #Login .Form .ForgotPass label {
+        font-size: 14px;
+    }
+
+
+
+    #Contact iframe {
+        height: 300px;
+    }
+    #Contact .getintouch h5 {
+        font-size: 18px;
+    }
+    #Contact .content {
+        width: 80%;
+    }
+    #Contact .content ul li .phone, 
+    #Contact .content ul li .mail, 
+    #Contact .content ul li .map {
+        font-size: 12px;
+    }
+    #Contact .Form {
+        padding: 30px;
+    }
+    #Contact .Form .socialMedia ul li {
+        margin-right: 10px;
+    }
+    #Contact .Form .socialMedia ul li a {
+        width: 30px;
+        height: 30px;
+    }
+    #Contact .Form .socialMedia ul li a i {
+        font-size: 16px;
+    }
+    #Contact .Form .SendButton a {
+        font-size: 14px;
+    }
+
+
+
+    #AboutPage .title h4 {
+        font-size: 18px;
+    }
+    #AboutPage .desc p,
+    #AboutPage .title span {
+        font-size: 12px;
+    }
+    #AboutPage .title span img {
+        height: 10px;
+    }
+
+
+    
+
+    .leftBar .Links ul li span {
+        font-size: 14px;
+    }
+    #EditProfile .saveButton a {
+        font-size: 14px;
+    }
+   
+}
+
+
+@media only screen and (min-width: 992px)and (max-width: 1199px) {
+    body {
+        padding-top: 83px;
+    }
+    .owl-nav .owl-next {
+        left: 45px;
+    }
+    .owl-nav .owl-prev {
+        right: 45px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 14px;
+        padding: 0.4rem 1rem;
+    }
+    .navbar .links ul li {
+        margin-left: 10px;
+    }
+    .navbar-brand img,
+    .MainNav .navbar-brand img {
+        height: 65px;
+    }
+
+
+
+
+    .contentSlider h1 {
+        font-size: 45px;
+    }
+
+
+
+    .collection_item .image {
+        height: 412px;
+    }
+    .collection_item .right_image {
+        height: 191px;
+    }
+    .product_item .image {
+        height: 295px;
+    }
+    .product_item .price span {
+        font-size: 14px;
+    }
+
+
+
+
+    .widget_nav_menu .app-store,
+    .widget_nav_menu .google-play {
+        height: 30px;
+    }
+    .copyright p, .language p {
+        font-size: 12px;
+    }
+
+
+
+
+
+
+    #Category_page .SortBy .radio-label,
+    #Category_page .SortBy .checkbox-label {
+        font-size: 12px;
+    }
+    #Category_page .product_item .image {
+        height: 396px;
+    }
+
+
+   
+    .lSSlideOuter .lightSlider {
+        /* height: 375px !important; */
+        height: auto;
+    }
+
+
+    .leftBar .Links ul li span {
+        font-size: 14px;
+    }
+}
+
+
+
+
